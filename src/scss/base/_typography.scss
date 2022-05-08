@@ -13,3 +13,15 @@ h4 {
   font-weight: bolder;
   font-size: 0.9rem;
 }
+
+input, select {
+  font-weight: $font-weight-bold;
+}
+
+button.btn, input[type=button], input[type=submit] {
+  font-weight: $font-weight-bold;
+}
+
+.form-control, .custom-select {
+  font-weight: $font-weight-bold;
+}

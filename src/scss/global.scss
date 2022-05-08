@@ -3,16 +3,17 @@
 input, select {
   min-width: $form-inputs-min-width;
   min-height: $form-inputs-min-height;
+  border-radius: $form-buttons-inputs-border-radius;
 }
 
-button, input[type=button], input[type=submit] {
+button.btn, input[type=button], input[type=submit] {
   min-width: $form-buttons-min-width;
   min-height: $form-inputs-min-height;
+  border-radius: $form-buttons-inputs-border-radius;
 }
 
 .form-control, .custom-select {
-  border-radius: 6px;
-  padding: $form-inputs-padding;
+  border-radius: $form-buttons-inputs-border-radius;
 }
 
 select.custom-select{
