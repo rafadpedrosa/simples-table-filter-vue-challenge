@@ -4,6 +4,13 @@ $body-bg: #fdfdfd;
 $primary:       #2aa7ff;
 $success:       #18cf6b;
 
+$form-buttons-inputs-border-radius: 0.5rem !default;
+$form-buttons-min-width: 10rem !default;
+
+$form-inputs-min-width: 20rem !default;
+$form-inputs-min-height: 3.5rem !default;
+$form-inputs-padding: 1rem !default;
+
 // Bootstrap and its default variables
 @import '../../node_modules/bootstrap/scss/bootstrap';
 // BootstrapVue and its default variables
