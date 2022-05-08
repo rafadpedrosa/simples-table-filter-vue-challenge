@@ -1,14 +1,26 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
 import Home from '../views/Home.vue'
+import PrivateLayout from '@/layout/PrivateLayout'
 
 Vue.use(VueRouter)
 
 const routes = [
   {
     path: '/',
-    name: 'Home',
-    component: Home
+    component: PrivateLayout,
+    children: [
+      {
+        path: '/',
+        name: 'home',
+        component: Home
+      }
+    ]
+  },
+  {
+    path: '/**',
+    name: 'redirect-home',
+    beforeEnter: (to, from, next) => next('/')
   }
 ]
 
