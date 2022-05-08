@@ -14,7 +14,7 @@
         label="TIME TRACKING"
       >
         <b-form-select
-          :options="[{ text: 'Enabled', value: true },{ text: 'Enabled', value: false }]"
+          :options="[{ text: 'Enabled', value: true },{ text: 'Disable', value: false }]"
           :value="true"
         ></b-form-select>
       </b-form-group>
