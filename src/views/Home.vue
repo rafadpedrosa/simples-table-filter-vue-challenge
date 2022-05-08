@@ -16,7 +16,7 @@
       </template>
 
       <b-tab title="MEMBERS" title-link-class="tab-title" active lazy>
-        <members></members>
+        <members ></members>
       </b-tab>
       <b-tab title="INVITES" title-link-class="tab-title" disabled lazy>
         <invites></invites>
@@ -26,7 +26,7 @@
 </template>
 
 <script>
-import Members from '@/components/members/Members'
+import Members from '@/views/Members'
 import Invites from '@/components/Invites'
 
 export default {
@@ -35,6 +35,7 @@ export default {
     Invites
   },
   name: 'Home'
+
 }
 </script>
 
