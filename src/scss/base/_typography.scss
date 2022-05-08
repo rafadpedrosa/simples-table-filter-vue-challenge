@@ -1,4 +1,15 @@
 // Typography styles should go here
+
+body {
+  color: $gray-600;
+  font-family: Arial;
+}
+
 h4 {
   color: darkred;
+}
+
+.form-group > .col-form-label {
+  font-weight: bolder;
+  font-size: 0.9rem;
 }

@@ -7,6 +7,12 @@ import router from './router'
 import store from './store'
 import './scss/global.scss'
 
+// Import every bootstrap icon
+import { BootstrapVue, BootstrapVueIcons } from 'bootstrap-vue'
+
+Vue.use(BootstrapVue)
+Vue.use(BootstrapVueIcons)
+
 Vue.config.productionTip = false
 
 new Vue({

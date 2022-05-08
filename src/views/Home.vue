@@ -1,9 +1,9 @@
 <template>
   <div class="home">
     <!-- ::: I'll not over think this. I would/could probably use routers or a code calling a method to change this name dynamically but I would like to keep it simple and explain during next interview if needed. -->
-    <h1 class="pb-3"> Members </h1>
+    <h1 class="pb-3 mx-3"> Members </h1>
     <!-- Your implementation should start here -->
-    <b-tabs content-class="mt-3">
+    <b-tabs class="mx-3"  content-class="mt-3">
       <b-tab title="MEMBERS" title-link-class="tab-title" active lazy>
         <members></members>
       </b-tab>
@@ -15,7 +15,7 @@
 </template>
 
 <script>
-import Members from '@/components/Members'
+import Members from '@/components/members/Members'
 import Invites from '@/components/Invites'
 
 export default {

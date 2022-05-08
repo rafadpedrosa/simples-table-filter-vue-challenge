@@ -1,1 +1,22 @@
 @import "base/typography.scss";
+
+input, select {
+  min-width: $form-inputs-min-width;
+  min-height: $form-inputs-min-height;
+}
+
+button, input[type=button], input[type=submit] {
+  min-width: $form-buttons-min-width;
+  min-height: $form-inputs-min-height;
+}
+
+.form-control, .custom-select {
+  border-radius: 6px;
+  padding: $form-inputs-padding;
+}
+
+select.custom-select{
+  background: url(http://cdn1.iconfinder.com/data/icons/cc_mono_icon_set/blacks/16x16/br_down.png) no-repeat right;
+  -webkit-appearance: none;
+  background-position-x: 96%;
+}
