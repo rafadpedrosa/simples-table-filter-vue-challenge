@@ -1,5 +1,5 @@
 <template>
-  <b-table :fields="membersFields" class="mt-3 members-table" hover :items="membersList" caption-bottom>
+  <b-table :fields="membersFields" class="mt-3 members-table" hover :items="membersList" show-empty caption-bottom empty-html="empty">
     <template #table-caption>
       <p v-if="membersList.length">Showing {{ membersList.length }} of {{ totalMembers }} members</p>
     </template>
@@ -38,10 +38,7 @@
     </template>
 
     <template #empty="scope">
-      <h4>{{ scope }} test </h4>
-    </template>
-    <template #emptyfiltered="scope">
-      <h4>{{ scope }} test 2</h4>
+      <h4>{{ scope.emptyText }} </h4>
     </template>
   </b-table>
 </template>
