@@ -2,7 +2,7 @@ import Vue from 'vue'
 import Vuex from 'vuex'
 import { FETCH_MEMBERS, SET_MEMBERS, SET_TOTAL_MEMBERS } from '@/store/cosnts/consts'
 import axios from 'axios'
-import _ from 'lodash'
+// import _ from 'lodash'
 
 Vue.use(Vuex)
 
@@ -28,7 +28,7 @@ export default new Vuex.Store({
     }
   },
   getters: {
-    membersList: state => _.cloneDeep(state.members)
+    membersList: state => state.members
   },
   modules: {
   }

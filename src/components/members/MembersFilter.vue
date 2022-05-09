@@ -1,21 +1,26 @@
 <template>
 <div class="d-flex justify-content-between">
+
   <b-form @submit="event.preventDefault()" inline>
       <b-form-group
         label="ROLE"
         class="mb-3 mr-sm-3 mb-sm-0"
       >
         <b-form-select
-          :options="[{ text: 'All Roles', value: 'All' }, 'Owner', 'Viewer', 'Editor']"
-          :value="'All'"
+          :options="[{ text: 'All Roles', value: '' }, 'Owner', 'Viewer', 'Editor']"
+          v-model="filters.role"
+          :value="filters.role"
+          @change="$emit('filters', { filters })"
         ></b-form-select>
       </b-form-group>
       <b-form-group
         label="TIME TRACKING"
       >
         <b-form-select
-          :options="[{ text: 'Enabled', value: true },{ text: 'Disable', value: false }]"
-          :value="true"
+          :options="[{ text: 'Enabled', value: 'enabled' },{ text: 'Disable', value: 'disabled' }]"
+          v-model="filters.timeTrack"
+          :value="filters.timeTrack"
+          @change="$emit('filters', { filters })"
         ></b-form-select>
       </b-form-group>
   </b-form>
@@ -29,9 +34,9 @@ export default {
   name: 'MembersFilter',
   data () {
     return {
-      form: {
+      filters: {
         role: '',
-        timeTrack: ''
+        timeTrack: 'enabled'
       }
     }
   }

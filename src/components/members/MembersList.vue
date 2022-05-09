@@ -5,16 +5,15 @@
     </template>
 
     <template #cell(role)="{item: { role }}">
-      <p class="editable-cell" >{{ role }}<b-icon class="pencil-icon px-2" scale="1.2" icon="pencil" ></b-icon> </p>
+      <p class="editable-cell" >{{ role }}<b-icon class="pencil-icon mx-2" scale="1.2" icon="pencil" ></b-icon> </p>
     </template>
 
     <template #cell(projects)="{item: { projects }}">
-      <p class="editable-cell" >{{ projects }}<b-icon class="pencil-icon px-2" scale="1.2" icon="pencil" ></b-icon> </p>
+      <p class="editable-cell" >{{ projects }}<b-icon class="pencil-icon mx-2" scale="1.2" icon="pencil" ></b-icon> </p>
     </template>
 
-    <template #cell(payment)="{item: { payment }}">
-
-      <p class="editable-cell m-0" :class="{'emptyDescriptionValue' : !payment.value }">{{ payment.paymentDescription }}<b-icon class="pencil-icon px-2" scale="1.2"  icon="pencil" ></b-icon></p>
+    <template #cell(payment)="{item: { payment, paymentDescription }}">
+      <p class="editable-cell m-0" :class="{'emptyDescriptionValue' : !payment }">{{ paymentDescription }}<b-icon class="pencil-icon mx-2" scale="1.2"  icon="pencil" ></b-icon></p>
     </template>
 
     <template #cell(limits)="{item: { limits }}">
@@ -23,7 +22,7 @@
           <p class="m-0" :class="{'emptyDescriptionValue' : !limits.weekly }">{{ limits.weeklyDescription }}</p>
           <p class="m-0" :class="{'emptyDescriptionValue' : !limits.daily }">{{ limits.dailyDescription }}</p>
         </div>
-        <b-icon class="pencil-icon px-2" scale="1.2"  icon="pencil" ></b-icon>
+        <b-icon class="pencil-icon mx-2" scale="1.2"  icon="pencil" ></b-icon>
       </div>
     </template>
 
@@ -68,8 +67,7 @@ export default {
 
       member.limits = { ...member.limits, weeklyDescription, dailyDescription }
 
-      const paymentDescription = member.payment || 'No pay rate / No bill rate'
-      member.payment = { value: member.payment, paymentDescription }
+      member.paymentDescription = member.payment || 'No pay rate / No bill rate'
 
       return member
     }
@@ -117,10 +115,9 @@ export default {
     display: none;
   }
 
-  tr:hover{
+  tr:hover {
     .editable-cell:hover {
       color: $primary;
-      font-weight: bolder;
       cursor: pointer;
     }
     .editable-cell {
