@@ -1,7 +1,20 @@
 <template>
-  <b-table :fields="membersFields" class="mt-3 members-table" hover :items="membersList" show-empty caption-bottom empty-html="empty">
-    <template #table-caption>
-      <p v-if="membersList.length">Showing {{ membersList.length }} of {{ totalMembers }} members</p>
+  <b-table selectable
+           :select-mode="'multi'"
+           @row-selected="onRowSelected"
+           ref="memberTable"
+           :fields="membersFields" class="mt-3 members-table" hover :items="membersList" show-empty caption-bottom empty-html="empty">
+
+    <template #head(selected)>
+      <b-checkbox :checked="allRowsSelected" @change="selectAllRows" ></b-checkbox>
+    </template>
+
+    <template #cell(selected)="{rowSelected, index}">
+      <b-checkbox :checked="rowSelected" @change="selectRow(index)" ></b-checkbox>
+    </template>
+
+    <template #cell(name)="{item: { name }}">
+      <b-img v-bind="{ blank: true, blankColor: '#18cf6b', width: 30, height: 30, class: 'mx-2' }" rounded="circle" alt="Circle image"></b-img> {{ name }}
     </template>
 
     <template #cell(role)="{item: { role }}">
@@ -40,6 +53,10 @@
     <template #empty="scope">
       <h4>{{ scope.emptyText }} </h4>
     </template>
+
+    <template #table-caption>
+      <p v-if="membersList.length">Showing {{ membersList.length }} of {{ totalMembers }} members</p>
+    </template>
   </b-table>
 </template>
 
@@ -54,7 +71,24 @@ export default {
       type: Number
     }
   },
+  data () {
+    return {
+      selectedMember: null,
+      allRowsSelected: false
+    }
+  },
   methods: {
+    selectRow (index) {
+      this.$refs.memberTable.selectRow(index)
+      this.allRowsSelected = this.$refs.memberTable.selectedRows.length === this.totalMembers
+    },
+    selectAllRows () {
+      this.allRowsSelected ? this.$refs.memberTable.clearSelected() : this.$refs.memberTable.selectAllRows()
+      this.allRowsSelected = this.$refs.memberTable.selectedRows.length === this.totalMembers
+    },
+    onRowSelected (items) {
+      this.selectedMember = items
+    },
     getTimeTrackingMessageType (timeTracking) {
       return timeTracking === 'enabled' ? 'success' : 'danger'
     },
@@ -72,6 +106,7 @@ export default {
   computed: {
     membersFields () {
       return [
+        'selected',
         { key: 'name', label: 'Member' },
         'role',
         'projects',
