@@ -94,8 +94,8 @@ export default {
 }
 
 .members-table {
-  .emptyDescriptionValue {
-    color: $gray-600 default;
+  .editable-cell > div > .emptyDescriptionValue, .editable-cell.emptyDescriptionValue {
+    color: $gray-600;
   }
 
   .table-select-actions {
