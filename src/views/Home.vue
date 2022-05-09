@@ -1,6 +1,5 @@
 <template>
   <div class="home">
-    <!-- ::: I'll not over think this exercise. I would/could probably use routers or a code calling a method to change this name 'Members' dynamically but I would like to keep it simple and explain during next interview only if needed. -->
     <h1 class="pb-3 mx-3"> Members </h1>
     <!-- Your implementation should start here -->
 
@@ -56,7 +55,6 @@ export default {
   },
   watch: {
     search (search) {
-      debugger
       this.setFilters({ filters: { search } })
     }
   },
@@ -65,7 +63,6 @@ export default {
       fetchMembers: FETCH_MEMBERS
     }),
     setFilters: _.debounce(function (data) {
-      debugger
       const { filters } = data
       this.filters = { ...this.filters, ...filters }
     }, 700),

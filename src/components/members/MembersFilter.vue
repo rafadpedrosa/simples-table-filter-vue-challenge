@@ -7,6 +7,7 @@
         class="mb-3 mr-sm-3 mb-sm-0"
       >
         <b-form-select
+          data-test="role"
           :options="[{ text: 'All Roles', value: '' }, 'Owner', 'Viewer', 'Editor']"
           v-model="filters.role"
           :value="filters.role"
@@ -17,6 +18,7 @@
         label="TIME TRACKING"
       >
         <b-form-select
+          data-test="timeTrack"
           :options="[{ text: 'Enabled', value: 'enabled' },{ text: 'Disable', value: 'disabled' }]"
           v-model="filters.timeTrack"
           :value="filters.timeTrack"

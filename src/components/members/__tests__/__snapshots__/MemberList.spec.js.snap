@@ -1,0 +1,231 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`MembersList.vue should render a message if the table is empty  1`] = `
+<table caption-bottom="" role="table" aria-busy="false" aria-colcount="7" class="table b-table mt-3 members-table">
+  <caption></caption>
+  <!---->
+  <thead role="rowgroup" class="">
+    <!---->
+    <tr role="row" class="">
+      <th role="columnheader" scope="col" aria-colindex="1" class="">
+        <div>Member</div>
+      </th>
+      <th role="columnheader" scope="col" aria-colindex="2" class="">
+        <div>Role</div>
+      </th>
+      <th role="columnheader" scope="col" aria-colindex="3" class="">
+        <div>Projects</div>
+      </th>
+      <th role="columnheader" scope="col" aria-colindex="4" class="">
+        <div>Payment</div>
+      </th>
+      <th role="columnheader" scope="col" aria-colindex="5" class="">
+        <div>Limits</div>
+      </th>
+      <th role="columnheader" scope="col" aria-colindex="6" class="">
+        <div>Time Tracking</div>
+      </th>
+      <th role="columnheader" scope="col" aria-colindex="7" aria-label="Actions" class="">
+        <div></div>
+      </th>
+    </tr>
+  </thead>
+  <tbody role="rowgroup">
+    <!---->
+    <tr role="row" class="b-table-empty-row">
+      <td colspan="7" role="cell" class="">
+        <div role="alert" aria-live="polite">
+          <h4>There are no records to show </h4>
+        </div>
+      </td>
+    </tr>
+    <!---->
+  </tbody>
+  <!---->
+</table>
+`;
+
+exports[`MembersList.vue should render a table with a list of members  1`] = `
+<table caption-bottom="" role="table" aria-busy="false" aria-colcount="7" class="table b-table mt-3 members-table table-hover">
+  <caption>
+    <p>Showing 3 of members</p>
+  </caption>
+  <!---->
+  <thead role="rowgroup" class="">
+    <!---->
+    <tr role="row" class="">
+      <th role="columnheader" scope="col" aria-colindex="1" class="">
+        <div>Member</div>
+      </th>
+      <th role="columnheader" scope="col" aria-colindex="2" class="">
+        <div>Role</div>
+      </th>
+      <th role="columnheader" scope="col" aria-colindex="3" class="">
+        <div>Projects</div>
+      </th>
+      <th role="columnheader" scope="col" aria-colindex="4" class="">
+        <div>Payment</div>
+      </th>
+      <th role="columnheader" scope="col" aria-colindex="5" class="">
+        <div>Limits</div>
+      </th>
+      <th role="columnheader" scope="col" aria-colindex="6" class="">
+        <div>Time Tracking</div>
+      </th>
+      <th role="columnheader" scope="col" aria-colindex="7" aria-label="Actions" class="">
+        <div></div>
+      </th>
+    </tr>
+  </thead>
+  <tbody role="rowgroup">
+    <!---->
+    <tr role="row" class="">
+      <td aria-colindex="1" role="cell" class="">Jared Brown</td>
+      <td aria-colindex="2" role="cell" class="">
+        <p class="editable-cell">Owner<svg viewBox="0 0 16 16" width="1em" height="1em" focusable="false" role="img" aria-label="pencil" xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi-pencil pencil-icon mx-2 b-icon bi">
+            <g transform="translate(8 8) scale(1.2 1.2) translate(-8 -8)">
+              <path fill-rule="evenodd" d="M11.293 1.293a1 1 0 0 1 1.414 0l2 2a1 1 0 0 1 0 1.414l-9 9a1 1 0 0 1-.39.242l-3 1a1 1 0 0 1-1.266-1.265l1-3a1 1 0 0 1 .242-.391l9-9zM12 2l2 2-9 9-3 1 1-3 9-9z"></path>
+              <path fill-rule="evenodd" d="M12.146 6.354l-2.5-2.5.708-.708 2.5 2.5-.707.708zM3 10v.5a.5.5 0 0 0 .5.5H4v.5a.5.5 0 0 0 .5.5H5v.5a.5.5 0 0 0 .5.5H6v-1.5a.5.5 0 0 0-.5-.5H5v-.5a.5.5 0 0 0-.5-.5H3z"></path>
+            </g>
+          </svg></p>
+      </td>
+      <td aria-colindex="3" role="cell" class="">
+        <p class="editable-cell">8<svg viewBox="0 0 16 16" width="1em" height="1em" focusable="false" role="img" aria-label="pencil" xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi-pencil pencil-icon mx-2 b-icon bi">
+            <g transform="translate(8 8) scale(1.2 1.2) translate(-8 -8)">
+              <path fill-rule="evenodd" d="M11.293 1.293a1 1 0 0 1 1.414 0l2 2a1 1 0 0 1 0 1.414l-9 9a1 1 0 0 1-.39.242l-3 1a1 1 0 0 1-1.266-1.265l1-3a1 1 0 0 1 .242-.391l9-9zM12 2l2 2-9 9-3 1 1-3 9-9z"></path>
+              <path fill-rule="evenodd" d="M12.146 6.354l-2.5-2.5.708-.708 2.5 2.5-.707.708zM3 10v.5a.5.5 0 0 0 .5.5H4v.5a.5.5 0 0 0 .5.5H5v.5a.5.5 0 0 0 .5.5H6v-1.5a.5.5 0 0 0-.5-.5H5v-.5a.5.5 0 0 0-.5-.5H3z"></path>
+            </g>
+          </svg></p>
+      </td>
+      <td aria-colindex="4" role="cell" class="">
+        <p class="editable-cell m-0 emptyDescriptionValue">No pay rate / No bill rate<svg viewBox="0 0 16 16" width="1em" height="1em" focusable="false" role="img" aria-label="pencil" xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi-pencil pencil-icon mx-2 b-icon bi">
+            <g transform="translate(8 8) scale(1.2 1.2) translate(-8 -8)">
+              <path fill-rule="evenodd" d="M11.293 1.293a1 1 0 0 1 1.414 0l2 2a1 1 0 0 1 0 1.414l-9 9a1 1 0 0 1-.39.242l-3 1a1 1 0 0 1-1.266-1.265l1-3a1 1 0 0 1 .242-.391l9-9zM12 2l2 2-9 9-3 1 1-3 9-9z"></path>
+              <path fill-rule="evenodd" d="M12.146 6.354l-2.5-2.5.708-.708 2.5 2.5-.707.708zM3 10v.5a.5.5 0 0 0 .5.5H4v.5a.5.5 0 0 0 .5.5H5v.5a.5.5 0 0 0 .5.5H6v-1.5a.5.5 0 0 0-.5-.5H5v-.5a.5.5 0 0 0-.5-.5H3z"></path>
+            </g>
+          </svg></p>
+      </td>
+      <td aria-colindex="5" role="cell" class="">
+        <div class="d-flex editable-cell">
+          <div>
+            <p class="m-0 emptyDescriptionValue">No weekly limit</p>
+            <p class="m-0">8:00 / Daily</p>
+          </div> <svg viewBox="0 0 16 16" width="1em" height="1em" focusable="false" role="img" aria-label="pencil" xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi-pencil pencil-icon mx-2 b-icon bi">
+            <g transform="translate(8 8) scale(1.2 1.2) translate(-8 -8)">
+              <path fill-rule="evenodd" d="M11.293 1.293a1 1 0 0 1 1.414 0l2 2a1 1 0 0 1 0 1.414l-9 9a1 1 0 0 1-.39.242l-3 1a1 1 0 0 1-1.266-1.265l1-3a1 1 0 0 1 .242-.391l9-9zM12 2l2 2-9 9-3 1 1-3 9-9z"></path>
+              <path fill-rule="evenodd" d="M12.146 6.354l-2.5-2.5.708-.708 2.5 2.5-.707.708zM3 10v.5a.5.5 0 0 0 .5.5H4v.5a.5.5 0 0 0 .5.5H5v.5a.5.5 0 0 0 .5.5H6v-1.5a.5.5 0 0 0-.5-.5H5v-.5a.5.5 0 0 0-.5-.5H3z"></path>
+            </g>
+          </svg>
+        </div>
+      </td>
+      <td aria-colindex="6" role="cell" class="">
+        <h5><span class="badge badge-success">enabled</span></h5>
+      </td>
+      <td aria-colindex="7" role="cell" class=""><select class="table-select-actions custom-select">
+          <option value="true">Actions</option>
+          <option value="false">action 001</option>
+          <option value="false">action 002</option>
+        </select></td>
+    </tr>
+    <tr role="row" class="">
+      <td aria-colindex="1" role="cell" class="">Adrian Goia</td>
+      <td aria-colindex="2" role="cell" class="">
+        <p class="editable-cell">Viewer<svg viewBox="0 0 16 16" width="1em" height="1em" focusable="false" role="img" aria-label="pencil" xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi-pencil pencil-icon mx-2 b-icon bi">
+            <g transform="translate(8 8) scale(1.2 1.2) translate(-8 -8)">
+              <path fill-rule="evenodd" d="M11.293 1.293a1 1 0 0 1 1.414 0l2 2a1 1 0 0 1 0 1.414l-9 9a1 1 0 0 1-.39.242l-3 1a1 1 0 0 1-1.266-1.265l1-3a1 1 0 0 1 .242-.391l9-9zM12 2l2 2-9 9-3 1 1-3 9-9z"></path>
+              <path fill-rule="evenodd" d="M12.146 6.354l-2.5-2.5.708-.708 2.5 2.5-.707.708zM3 10v.5a.5.5 0 0 0 .5.5H4v.5a.5.5 0 0 0 .5.5H5v.5a.5.5 0 0 0 .5.5H6v-1.5a.5.5 0 0 0-.5-.5H5v-.5a.5.5 0 0 0-.5-.5H3z"></path>
+            </g>
+          </svg></p>
+      </td>
+      <td aria-colindex="3" role="cell" class="">
+        <p class="editable-cell">5<svg viewBox="0 0 16 16" width="1em" height="1em" focusable="false" role="img" aria-label="pencil" xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi-pencil pencil-icon mx-2 b-icon bi">
+            <g transform="translate(8 8) scale(1.2 1.2) translate(-8 -8)">
+              <path fill-rule="evenodd" d="M11.293 1.293a1 1 0 0 1 1.414 0l2 2a1 1 0 0 1 0 1.414l-9 9a1 1 0 0 1-.39.242l-3 1a1 1 0 0 1-1.266-1.265l1-3a1 1 0 0 1 .242-.391l9-9zM12 2l2 2-9 9-3 1 1-3 9-9z"></path>
+              <path fill-rule="evenodd" d="M12.146 6.354l-2.5-2.5.708-.708 2.5 2.5-.707.708zM3 10v.5a.5.5 0 0 0 .5.5H4v.5a.5.5 0 0 0 .5.5H5v.5a.5.5 0 0 0 .5.5H6v-1.5a.5.5 0 0 0-.5-.5H5v-.5a.5.5 0 0 0-.5-.5H3z"></path>
+            </g>
+          </svg></p>
+      </td>
+      <td aria-colindex="4" role="cell" class="">
+        <p class="editable-cell m-0 emptyDescriptionValue">No pay rate / No bill rate<svg viewBox="0 0 16 16" width="1em" height="1em" focusable="false" role="img" aria-label="pencil" xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi-pencil pencil-icon mx-2 b-icon bi">
+            <g transform="translate(8 8) scale(1.2 1.2) translate(-8 -8)">
+              <path fill-rule="evenodd" d="M11.293 1.293a1 1 0 0 1 1.414 0l2 2a1 1 0 0 1 0 1.414l-9 9a1 1 0 0 1-.39.242l-3 1a1 1 0 0 1-1.266-1.265l1-3a1 1 0 0 1 .242-.391l9-9zM12 2l2 2-9 9-3 1 1-3 9-9z"></path>
+              <path fill-rule="evenodd" d="M12.146 6.354l-2.5-2.5.708-.708 2.5 2.5-.707.708zM3 10v.5a.5.5 0 0 0 .5.5H4v.5a.5.5 0 0 0 .5.5H5v.5a.5.5 0 0 0 .5.5H6v-1.5a.5.5 0 0 0-.5-.5H5v-.5a.5.5 0 0 0-.5-.5H3z"></path>
+            </g>
+          </svg></p>
+      </td>
+      <td aria-colindex="5" role="cell" class="">
+        <div class="d-flex editable-cell">
+          <div>
+            <p class="m-0">50:00 / Weekly</p>
+            <p class="m-0">8:00 / Daily</p>
+          </div> <svg viewBox="0 0 16 16" width="1em" height="1em" focusable="false" role="img" aria-label="pencil" xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi-pencil pencil-icon mx-2 b-icon bi">
+            <g transform="translate(8 8) scale(1.2 1.2) translate(-8 -8)">
+              <path fill-rule="evenodd" d="M11.293 1.293a1 1 0 0 1 1.414 0l2 2a1 1 0 0 1 0 1.414l-9 9a1 1 0 0 1-.39.242l-3 1a1 1 0 0 1-1.266-1.265l1-3a1 1 0 0 1 .242-.391l9-9zM12 2l2 2-9 9-3 1 1-3 9-9z"></path>
+              <path fill-rule="evenodd" d="M12.146 6.354l-2.5-2.5.708-.708 2.5 2.5-.707.708zM3 10v.5a.5.5 0 0 0 .5.5H4v.5a.5.5 0 0 0 .5.5H5v.5a.5.5 0 0 0 .5.5H6v-1.5a.5.5 0 0 0-.5-.5H5v-.5a.5.5 0 0 0-.5-.5H3z"></path>
+            </g>
+          </svg>
+        </div>
+      </td>
+      <td aria-colindex="6" role="cell" class="">
+        <h5><span class="badge badge-success">enabled</span></h5>
+      </td>
+      <td aria-colindex="7" role="cell" class=""><select class="table-select-actions custom-select">
+          <option value="true">Actions</option>
+          <option value="false">action 001</option>
+          <option value="false">action 002</option>
+        </select></td>
+    </tr>
+    <tr role="row" class="">
+      <td aria-colindex="1" role="cell" class="">Cody Rogers</td>
+      <td aria-colindex="2" role="cell" class="">
+        <p class="editable-cell">Viewer<svg viewBox="0 0 16 16" width="1em" height="1em" focusable="false" role="img" aria-label="pencil" xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi-pencil pencil-icon mx-2 b-icon bi">
+            <g transform="translate(8 8) scale(1.2 1.2) translate(-8 -8)">
+              <path fill-rule="evenodd" d="M11.293 1.293a1 1 0 0 1 1.414 0l2 2a1 1 0 0 1 0 1.414l-9 9a1 1 0 0 1-.39.242l-3 1a1 1 0 0 1-1.266-1.265l1-3a1 1 0 0 1 .242-.391l9-9zM12 2l2 2-9 9-3 1 1-3 9-9z"></path>
+              <path fill-rule="evenodd" d="M12.146 6.354l-2.5-2.5.708-.708 2.5 2.5-.707.708zM3 10v.5a.5.5 0 0 0 .5.5H4v.5a.5.5 0 0 0 .5.5H5v.5a.5.5 0 0 0 .5.5H6v-1.5a.5.5 0 0 0-.5-.5H5v-.5a.5.5 0 0 0-.5-.5H3z"></path>
+            </g>
+          </svg></p>
+      </td>
+      <td aria-colindex="3" role="cell" class="">
+        <p class="editable-cell">8<svg viewBox="0 0 16 16" width="1em" height="1em" focusable="false" role="img" aria-label="pencil" xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi-pencil pencil-icon mx-2 b-icon bi">
+            <g transform="translate(8 8) scale(1.2 1.2) translate(-8 -8)">
+              <path fill-rule="evenodd" d="M11.293 1.293a1 1 0 0 1 1.414 0l2 2a1 1 0 0 1 0 1.414l-9 9a1 1 0 0 1-.39.242l-3 1a1 1 0 0 1-1.266-1.265l1-3a1 1 0 0 1 .242-.391l9-9zM12 2l2 2-9 9-3 1 1-3 9-9z"></path>
+              <path fill-rule="evenodd" d="M12.146 6.354l-2.5-2.5.708-.708 2.5 2.5-.707.708zM3 10v.5a.5.5 0 0 0 .5.5H4v.5a.5.5 0 0 0 .5.5H5v.5a.5.5 0 0 0 .5.5H6v-1.5a.5.5 0 0 0-.5-.5H5v-.5a.5.5 0 0 0-.5-.5H3z"></path>
+            </g>
+          </svg></p>
+      </td>
+      <td aria-colindex="4" role="cell" class="">
+        <p class="editable-cell m-0 emptyDescriptionValue">No pay rate / No bill rate<svg viewBox="0 0 16 16" width="1em" height="1em" focusable="false" role="img" aria-label="pencil" xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi-pencil pencil-icon mx-2 b-icon bi">
+            <g transform="translate(8 8) scale(1.2 1.2) translate(-8 -8)">
+              <path fill-rule="evenodd" d="M11.293 1.293a1 1 0 0 1 1.414 0l2 2a1 1 0 0 1 0 1.414l-9 9a1 1 0 0 1-.39.242l-3 1a1 1 0 0 1-1.266-1.265l1-3a1 1 0 0 1 .242-.391l9-9zM12 2l2 2-9 9-3 1 1-3 9-9z"></path>
+              <path fill-rule="evenodd" d="M12.146 6.354l-2.5-2.5.708-.708 2.5 2.5-.707.708zM3 10v.5a.5.5 0 0 0 .5.5H4v.5a.5.5 0 0 0 .5.5H5v.5a.5.5 0 0 0 .5.5H6v-1.5a.5.5 0 0 0-.5-.5H5v-.5a.5.5 0 0 0-.5-.5H3z"></path>
+            </g>
+          </svg></p>
+      </td>
+      <td aria-colindex="5" role="cell" class="">
+        <div class="d-flex editable-cell">
+          <div>
+            <p class="m-0">40:00 / Weekly</p>
+            <p class="m-0 emptyDescriptionValue">No daily limit</p>
+          </div> <svg viewBox="0 0 16 16" width="1em" height="1em" focusable="false" role="img" aria-label="pencil" xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi-pencil pencil-icon mx-2 b-icon bi">
+            <g transform="translate(8 8) scale(1.2 1.2) translate(-8 -8)">
+              <path fill-rule="evenodd" d="M11.293 1.293a1 1 0 0 1 1.414 0l2 2a1 1 0 0 1 0 1.414l-9 9a1 1 0 0 1-.39.242l-3 1a1 1 0 0 1-1.266-1.265l1-3a1 1 0 0 1 .242-.391l9-9zM12 2l2 2-9 9-3 1 1-3 9-9z"></path>
+              <path fill-rule="evenodd" d="M12.146 6.354l-2.5-2.5.708-.708 2.5 2.5-.707.708zM3 10v.5a.5.5 0 0 0 .5.5H4v.5a.5.5 0 0 0 .5.5H5v.5a.5.5 0 0 0 .5.5H6v-1.5a.5.5 0 0 0-.5-.5H5v-.5a.5.5 0 0 0-.5-.5H3z"></path>
+            </g>
+          </svg>
+        </div>
+      </td>
+      <td aria-colindex="6" role="cell" class="">
+        <h5><span class="badge badge-success">enabled</span></h5>
+      </td>
+      <td aria-colindex="7" role="cell" class=""><select class="table-select-actions custom-select">
+          <option value="true">Actions</option>
+          <option value="false">action 001</option>
+          <option value="false">action 002</option>
+        </select></td>
+    </tr>
+    <!---->
+    <!---->
+  </tbody>
+  <!---->
+</table>
+`;
