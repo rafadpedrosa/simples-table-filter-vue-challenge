@@ -1,0 +1,20 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Home.vue should render the tabs 1`] = `
+<div class="home">
+  <h1 class="pb-3 mx-3"> Members </h1>
+  <b-tabs-stub tag="div" contentclass="mt-3" class="mx-3">
+    <b-tab-stub active="true" tag="div" title="MEMBERS" titlelinkclass="tab-title" lazy="true">
+      <div class="members">
+        <p class="mb-4">1 of 2 members counts towards your pricing plan <b-icon-stub icon="exclamation-circle-fill" variant="secondary" fontscale="1" scale="1" rotate="0" shifth="0" shiftv="0" title="Viewers don't count towards your Team of 10 (Premium) plan"></b-icon-stub>
+        </p>
+        <members-filter-stub></members-filter-stub>
+        <members-list-stub members="[object Object],[object Object],[object Object]" totalmembers="3"></members-list-stub>
+      </div>
+    </b-tab-stub>
+    <b-tab-stub tag="div" title="INVITES" titlelinkclass="tab-title" disabled="true" lazy="true">
+      <invites-stub></invites-stub>
+    </b-tab-stub>
+  </b-tabs-stub>
+</div>
+`;

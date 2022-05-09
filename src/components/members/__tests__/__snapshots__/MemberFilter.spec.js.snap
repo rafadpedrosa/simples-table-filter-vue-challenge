@@ -1,0 +1,63 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`MembersFilter.vue should be rendered with the all roles and enabled already selected 1`] = `
+<div class="d-flex justify-content-between">
+  <form class="form-inline">
+    <fieldset class="form-group mb-3 mr-sm-3 mb-sm-0" id="__BVID__4">
+      <legend tabindex="-1" class="bv-no-focus-ring col-form-label pt-0" id="__BVID__4__BV_label_">ROLE</legend>
+      <div tabindex="-1" role="group" class="bv-no-focus-ring"><select class="custom-select" data-test="role" id="__BVID__5">
+          <option value="">All Roles</option>
+          <option value="Owner">Owner</option>
+          <option value="Viewer">Viewer</option>
+          <option value="Editor">Editor</option>
+        </select>
+        <!---->
+        <!---->
+        <!---->
+      </div>
+    </fieldset>
+    <fieldset class="form-group" id="__BVID__6">
+      <legend tabindex="-1" class="bv-no-focus-ring col-form-label pt-0" id="__BVID__6__BV_label_">TIME TRACKING</legend>
+      <div tabindex="-1" role="group" class="bv-no-focus-ring"><select class="custom-select" data-test="timeTrack" id="__BVID__7">
+          <option value="enabled">Enabled</option>
+          <option value="disabled">Disable</option>
+        </select>
+        <!---->
+        <!---->
+        <!---->
+      </div>
+    </fieldset>
+  </form> <button type="button" class="btn align-self-end btn-primary"> Invite member </button>
+</div>
+`;
+
+exports[`MembersFilter.vue should emit an event called filters when the data is changed 1`] = `
+<div class="d-flex justify-content-between">
+  <form class="form-inline">
+    <fieldset class="form-group mb-3 mr-sm-3 mb-sm-0" id="__BVID__4">
+      <legend tabindex="-1" class="bv-no-focus-ring col-form-label pt-0" id="__BVID__4__BV_label_">ROLE</legend>
+      <div tabindex="-1" role="group" class="bv-no-focus-ring"><select class="custom-select" data-test="role" id="__BVID__5">
+          <option value="">All Roles</option>
+          <option value="Owner">Owner</option>
+          <option value="Viewer">Viewer</option>
+          <option value="Editor">Editor</option>
+        </select>
+        <!---->
+        <!---->
+        <!---->
+      </div>
+    </fieldset>
+    <fieldset class="form-group" id="__BVID__6">
+      <legend tabindex="-1" class="bv-no-focus-ring col-form-label pt-0" id="__BVID__6__BV_label_">TIME TRACKING</legend>
+      <div tabindex="-1" role="group" class="bv-no-focus-ring"><select class="custom-select" data-test="timeTrack" id="__BVID__7">
+          <option value="enabled">Enabled</option>
+          <option value="disabled">Disable</option>
+        </select>
+        <!---->
+        <!---->
+        <!---->
+      </div>
+    </fieldset>
+  </form> <button type="button" class="btn align-self-end btn-primary"> Invite member </button>
+</div>
+`;
